@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:paddingLeft="78dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="@string/txtHeader"
+            android:textColor="@color/textcolor"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/owl"
+            android:layout_width="279dp"
+            android:layout_height="143dp"
+            android:src="@drawable/ovo" />
+    </TableRow>
+
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/margtop">
+
+        <TextView
+            android:id="@+id/Username1"
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textsizereg"
+            android:text="@string/Username"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/textcolor"
+            android:layout_marginEnd="20dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/Username2"
+            android:layout_width="@dimen/userime"
+            android:layout_height="@dimen/userime2"
+            android:textSize="@dimen/textsizereg"
+            android:background="@color/userTextView_Color"
+            android:hint="@string/userNameHint"
+            />
+
+    </TableRow>
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="30dp">
+
+        <TextView
+            android:id="@+id/Password1"
+            android:layout_width="wrap_content"
+            android:paddingLeft="10dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textsizereg"
+            android:text="@string/Password"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/textcolor"
+            android:layout_marginEnd="20dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/Password2"
+            android:layout_width="@dimen/userime"
+            android:layout_height="@dimen/userime2"
+            android:layout_marginLeft="1dp"
+            android:background="@color/PassTextView_Color"
+            android:hint="@string/passwordHint"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textSize="@dimen/textsizereg" />
+
+        <CheckBox
+            android:id="@+id/pokazi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/show"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/textsizereg"/>
+
+    </TableRow>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnLogin"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="@color/colorPrimary"/>
+
+    <Button
+        android:id="@+id/regis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnregis"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="@color/colorPrimary"/>
+
+</LinearLayout>

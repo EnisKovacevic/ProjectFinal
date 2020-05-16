@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.project3.DetailActivity"
+    tools:openDrawer="start">
+
+
+    <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:paddingLeft="78dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="@string/txtHeader"
+            android:textColor="@color/textcolor"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/owl"
+            android:layout_width="279dp"
+            android:layout_height="143dp"
+            android:src="@drawable/ovo" />
+    </TableRow>
+
+    <ImageView
+        android:id="@+id/thumb"
+        android:layout_width="500dp"
+        android:layout_height="500dp"
+        android:layout_gravity="center"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:scaleType="fitXY" />
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/margtop">
+
+        <TextView
+            android:id="@+id/Username1"
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textsizereg"
+            android:text="@string/name"
+            android:textColor="@color/textcolor"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/textsizereg"
+            android:text="" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <TextView
+            android:id="@+id/Username2"
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textsizereg"
+            android:text="@string/song"
+            android:textColor="@color/textcolor"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/son"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/textsizereg"
+            android:text="" />
+    </TableRow>
+
+    <Button
+        android:layout_width="125dp"
+        android:layout_height="35dp"
+        android:id="@+id/bconfirm"
+        android:text="@string/Confirmsong"
+        />
+
+    <Button
+        android:id="@+id/bSubmit"
+        android:layout_width="125dp"
+        android:layout_height="35dp"
+        android:text="@string/lyrics" />
+
+        <Button
+            android:id="@+id/bdemos"
+            android:layout_width="125dp"
+            android:layout_height="35dp"
+            android:text="@string/demo" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/drawer_nav"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/drawer_nav" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

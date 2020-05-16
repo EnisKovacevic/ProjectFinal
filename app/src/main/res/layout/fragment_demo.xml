@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true">
+
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:paddingLeft="78dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="@string/txtHeader"
+            android:textColor="@color/textcolor"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/owl"
+            android:layout_width="279dp"
+            android:layout_height="143dp"
+            android:src="@drawable/ovo" />
+    </TableRow>
+
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="180dp"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:id="@+id/feed"
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textsizereg"
+            android:text="@string/enter"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/textcolor"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/fname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textsizereg"
+            android:textColor="@color/textcolor"
+            />
+
+    </TableRow>
+
+    <Button
+        android:id="@+id/bsend"
+        android:layout_width="125dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="360dp"
+        android:text="@string/send" />
+</RelativeLayout>

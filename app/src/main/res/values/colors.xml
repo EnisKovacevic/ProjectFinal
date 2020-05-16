@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFF</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="textcolor">#000000</color>
+    <color name="usernameColor">#ffffff</color>
+    <color name="userTextView_Color">#ffffff</color>
+    <color name="passwordColor">#ffffff</color>
+    <color name="PassTextView_Color">#ffffff</color>
+    <color name="btnText_Color">#000000</color>
+    <color name="btnColor">#FFFF</color>
+    <color name="app_background">#FFFF</color>
+    <color name="header_background">#ffffff</color>
+
+
+</resources>
